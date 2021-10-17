@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+}
+
+.btn {
+  background: #fff;
+  color: #333;
+  padding: 1em 4em;
+  font-size: 1.3rem;
+  border-radius: 30px;
+  display: block;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.huddle {
+  width: 375px;
+  background: url(/images/bg-mobile.svg) center center/cover no-repeat, linear-gradient(10deg, #674baf, #8000ff);
+  padding: 20px 25px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.huddle .huddle-logo {
+  display: block;
+  width: 100px;
+}
+
+.huddle .huddle-img {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+.huddle .huddle-content {
+  text-align: center;
+  color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.huddle .huddle-content .btn {
+  font-family: "Open Sans";
+}
+
+.huddle .huddle-content .huddle-content-title {
+  text-transform: capitalize;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 2.3rem;
+  line-height: 1.4;
+}
+
+.huddle .huddle-content .huddle-content-body {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-top: 10px;
+  font-family: "Open Sans";
+}
+
+.huddle .huddle-content .huddle-socialLinks {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.huddle .huddle-content .huddle-socialLinks a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1000000px;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 540px) {
+  .huddle {
+    width: 100%;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 100vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .huddle {
+    width: 90%;
+    padding: 0 10%;
+    height: 80vh;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 812px) {
+  .huddle {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .huddle .huddle-logo {
+    position: absolute;
+    top: 20px;
+    left: 75px;
+  }
+  .huddle .huddle-img {
+    width: 40%;
+  }
+  .huddle .huddle-content {
+    width: 50%;
+    text-align: left;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .huddle .huddle-content .huddle-content-title {
+    font-size: 1.8rem;
+  }
+  .huddle .huddle-content .huddle-content-body {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  .huddle .huddle-content .btn {
+    width: unset;
+    display: inline-block;
+    font-size: 1rem;
+  }
+  .huddle .huddle-content .huddle-socialLinks {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .huddle .huddle-content .huddle-socialLinks a {
+    width: 25px;
+    height: 25px;
+    margin: 0 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .huddle {
+    padding: 0 100px;
+    height: 70vh;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .huddle {
+    width: 1440px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 85vh;
+    padding-top: 3rem;
+  }
+  .huddle .huddle-logo {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    width: 10%;
+  }
+  .huddle .huddle-content {
+    text-align: unset;
+    padding-left: 2rem;
+  }
+  .huddle .huddle-content .btn {
+    width: unset;
+    display: inline-block;
+  }
+  .huddle .huddle-socialLinks {
+    position: absolute;
+    width: 15% !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    bottom: 30px;
+    right: 30px;
+  }
+  .huddle .huddle-socialLinks a {
+    margin-right: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
