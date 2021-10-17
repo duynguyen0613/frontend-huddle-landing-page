@@ -1,0 +1,246 @@
+// open sans
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+// poppins
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+// color variables
+$color-primary-violet: hsl(257, 40%, 49%);
+$color-primary-softMagenta: hsl(300, 69%, 71%);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+}
+
+.btn {
+  background: #fff;
+  color: #333;
+  padding: 1em 4em;
+  font-size: 1.3rem;
+  border-radius: 30px;
+  display: block;
+  width: 80%;
+  margin: 1rem auto;
+}
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.huddle {
+  width: 375px;
+  background: url(/images/bg-mobile.svg) center center/cover no-repeat,
+    linear-gradient(
+      10deg,
+      rgba($color-primary-violet, 1),
+      rgba(rgb(128, 0, 255), 1)
+    );
+  padding: 20px 25px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .huddle-logo {
+    display: block;
+    width: 100px;
+  }
+
+  .huddle-img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .huddle-content {
+    text-align: center;
+    color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+
+    .btn {
+      font-family: "Open Sans";
+    }
+
+    .huddle-content-title {
+      text-transform: capitalize;
+      font-family: "Poppins";
+      font-weight: 600;
+      font-size: 2.3rem;
+      line-height: 1.4;
+    }
+
+    .huddle-content-body {
+      font-size: 1.3rem;
+      line-height: 1.5;
+      margin-top: 10px;
+      font-family: "Open Sans";
+    }
+    .huddle-socialLinks {
+      height: 40px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 40%;
+      margin: auto;
+      margin-top: 4rem;
+      a {
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1000000px;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 540px) {
+  .huddle {
+    width: 100%;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .huddle {
+    width: 90%;
+    padding: 0 10%;
+    height: 80vh;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 812px) {
+  .huddle {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    .huddle-logo {
+      position: absolute;
+      top: 20px;
+      left: 75px;
+    }
+
+    .huddle-img {
+      width: 40%;
+    }
+    .huddle-content {
+      width: 50%;
+      text-align: left;
+      justify-content: space-around !important;
+      align-items: center !important;
+
+      .huddle-content-title {
+        font-size: 1.8rem;
+      }
+      .huddle-content-body {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+      .btn {
+        width: unset;
+        display: inline-block;
+        font-size: 1rem;
+      }
+
+      .huddle-socialLinks {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        justify-content: center;
+        a {
+          width: 25px;
+          height: 25px;
+          margin: 0 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .huddle {
+    padding: 0 100px;
+    height: 70vh;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .huddle {
+    width: 1440px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 85vh;
+    padding-top: 3rem;
+
+    .huddle-logo {
+      position: absolute;
+      top: 20px;
+      left: 100px;
+      width: 10%;
+    }
+
+    .huddle-content {
+      text-align: unset;
+      padding-left: 2rem;
+
+      .btn {
+        width: unset;
+        display: inline-block;
+      }
+    }
+
+    .huddle-socialLinks {
+      position: absolute;
+      width: 15% !important;
+      justify-content: center !important;
+      bottom: 30px;
+      right: 30px;
+      a {
+        margin-right: 10px;
+      }
+    }
+  }
+}
